@@ -2,7 +2,6 @@ package com.example.demo.student;
 
 import java.time.LocalDate;
 import java.time.Month;
-import java.time.Period;
 import java.util.List;
 
 import org.springframework.boot.CommandLineRunner;
@@ -16,8 +15,8 @@ public class StudentConfig {
     CommandLineRunner commandLineRunner(StudentRepository studentRepository){
         return args -> {
 			Student mariam = new Student(
-				"Asder",
-				"asder.jamal@gmail.com",
+				"Mariam",
+				"mariam.jamal@gmail.com",
 				LocalDate.of(2000, Month.JANUARY, 5)
 			);
 			Student ahmed = new Student(
